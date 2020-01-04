@@ -1,0 +1,23 @@
+---
+layout: default
+head_content:
+  <link rel="alternate" type="application/atom+xml" href="https://blog.guntersweiler.net/feed/" />
+---
+
+<div class="listing">
+{% for post in site.posts %}
+  {% if post.type == 'link' %}
+    <div class="post other link">
+      <a class="icon" href="{{ post.url }}" title="This is a link elsewhere">★</a>
+      <h2><a href="{{ post.link }}">{{ post.title }}</a></h2>
+      <p>{{ post.content }}</p>
+    </div>
+  {% else %}
+    <div class="post">
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p class="date">{{ post.date | date: "%Y-%m-%d" }}</p>
+      <p class="post-summary">{{ post.summary }}</p>
+    </div>
+  {% endif %}
+{% endfor %}
+</div>

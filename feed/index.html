@@ -1,0 +1,31 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>rGunti Blog</title>
+ <link href="https://blog.guntersweiler.net/feed" rel="self"/>
+ <link href="https://blog.guntersweiler.net/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>https://blog.guntersweiler.net/</id>
+ <author>
+   <name>Raphael Guntersweiler</name>
+   <email>raphael@guntersweiler.net</email>
+ </author>
+
+ {% for post in site.posts %}
+ <entry>
+   <title>{{ post.title | xml_escape }}</title>
+   {% if post.type == 'link' %}
+     <link href="{{ post.link }}" />
+   {% else %}
+     <link href="https://blog.guntersweiler.net{{ post.url }}" />
+   {% endif %}
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>https://blog.guntersweiler.net{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+
+</feed>
