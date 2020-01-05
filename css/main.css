@@ -1,0 +1,52 @@
+/* General Setup */
+html, body {
+    margin: auto;
+    max-width: 600px;
+}
+
+/* Navigation */
+nav {
+    margin-bottom: 5px;
+}
+
+/* Article */
+article {
+    border-top: 1px solid black;
+    clear: left;
+}
+article .date {
+    font-style: italic;
+}
+
+/* Article Listing */
+.listing .post {
+    border-left: 1px solid black;
+    /*
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+     */
+    padding: 5px 0 5px 15px;
+    margin: 10px 0;
+}
+.listing .post .date,
+.listing .post .post-summary,
+.listing .post h2 {
+    margin: 2px 0;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid black;
+    margin-bottom: 10px;
+}
+
+/* Horizontal Link List */
+ul.hlinks {
+    list-style: none;
+    padding-left: 0;
+}
+ul.hlinks>li {
+    float: left;
+    position: relative;
+    margin-right: 10px;
+}
