@@ -9,7 +9,7 @@ Raphael Guntersweiler
 
 Kontakt:<br>
 Telefon: +49 (0) 1575 9416210<br>
-E-Mail: raphael@guntersweiler.net
+E-Mail: raphael (at) guntersweiler (punkt) net
 
 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
 
