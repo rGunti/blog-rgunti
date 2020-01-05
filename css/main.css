@@ -33,6 +33,10 @@ article .date {
 .listing .post h2 {
     margin: 2px 0;
 }
+.listing .post .tags>span {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
 
 /* Footer */
 footer {
